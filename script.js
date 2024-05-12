@@ -46,7 +46,7 @@ Complete the exercise in the space below:
 function isCharAVowel(x){
     const vowels = ['a','e','i','o','u','A','E','I','O','U']
 
-    if (x === vowels.includes(x)){
+    if (vowels.includes(x)){
         return true
     } else {
         return false
@@ -54,7 +54,7 @@ function isCharAVowel(x){
 }
 
 
-console.log('Exercise 3 Result:', isCharAVowel('a'));
+console.log('Exercise 3 Result:', isCharAVowel('f'));
 
 /*
 Exercise 4: generateEmail()
