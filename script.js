@@ -257,25 +257,25 @@ Complete the exercise in the space below:
 */
 
 function createUsername(x,y){
-    const xArray = x.split('');
-    const yArray = y.split('');
+    const xLettersArray = x.split('');
+    const yLettersArray = y.split('');
 
-    let xSubstring = 'd';
+    let xSubstring = '';
     for (let i = 0; i < 3; i++) {
-        if (i < xArray.length) {
-            xSubstring += xArray[i];
+        if (i < xLettersArray.length) {
+            xSubstring += xLettersArray[i];
         }
     }
 
     let ySubstring = '';
     for (let i = 0; i < 3; i++) {
-        if (i < yArray.length) {
-            ySubstring += yArray[i];
+        if (i < yLettersArray.length) {
+            ySubstring += yLettersArray[i];
         }
     }
 
     // Combine the substrings to create the username
-    const username = xSubstring + ySubstring;
+    const username = xSubstring + ySubstring// + $`{xLettersArray.length}` + $`{yLettersArray.length}`;
 
     return username;
 }
