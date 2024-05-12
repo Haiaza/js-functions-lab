@@ -82,7 +82,7 @@ Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
 Complete the exercise in the space below:
 */
 const greetUser = (name,timeOfDay) => {
-    return ('Good '+timeOfDay+ ', ' + name)
+    return ('Good '+timeOfDay+ ', ' + name+ '!')
 }
 
 
@@ -100,8 +100,10 @@ Complete the exercise in the space below:
 */
 function reverseString(str){
 	let splitString = str.split('');
+    //split method without anything specified creates an array list of every char
     let reverseArray = splitString.reverse();
     let joinArray = reverseArray.join('');
+    //join method binds the array into a string
     return joinArray;
 }
 
@@ -120,10 +122,13 @@ Complete the exercise in the space below:
 
 function checkPalindrome(str){
 	let splitString = str.split('')
+    // splits the word into an array of letters
     let reverseString = splitString.reverse();
+    // reversing the array of letters
     let joinArray = reverseString.join('');
-
+    // combining the array back into a word but reversed
     if(joinArray === str){
+        // checking if the original and the reversed str are the same
     return true;
     } else {
 return false;
@@ -143,12 +148,19 @@ Complete the exercise in the space below:
 */
 
 function maxOfThree(x,y,z){
-	return Math.max(x,y,z)
+	// return Math.max(x,y,z) // Math method - supersimple 1 liner
+    if (x > y && x > z){
+        return x
+    } else if (y > x && y > z){
+        return y
+    } else {
+        return z
+    }
 };
 
-maxOfThree(5,10,8);
 
-console.log('Exercise 8 Result:', maxOfThree(5, 10, 8));
+
+console.log('Exercise 8 Result:', maxOfThree(5, 10, 58));
 
 /*
 Exercise 9: calculateTip()
