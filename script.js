@@ -43,8 +43,10 @@ Example: isCharAVowel('a') should return true.
 
 Complete the exercise in the space below:
 */
-isCharAVowel = (x) => {
-    if (x === 'a','e','i','o','u'){
+function isCharAVowel(x){
+    const vowels = ['a','e','i','o','u','A','E','I','O','U']
+
+    if (x === vowels.includes(x)){
         return true
     } else {
         return false
@@ -52,7 +54,7 @@ isCharAVowel = (x) => {
 }
 
 
-console.log('Exercise 3 Result:', isCharAVowel("a"));
+console.log('Exercise 3 Result:', isCharAVowel('a'));
 
 /*
 Exercise 4: generateEmail()
@@ -282,3 +284,17 @@ function createUsername(x,y){
 }
 
 console.log('Exercise 13 Result:', createUsername("Samantha", "Green"));
+
+/*
+Exercise 14: numArgs()
+
+Challenge yourself with numArgs. This function should return the count of arguments passed to it when called.
+
+Complete the exercise in the space below:
+*/
+
+function numArgs(){
+    return arguments.length
+}
+
+console.log('Exercise 14 Result:', numArgs(1, 2, 3, 4));
